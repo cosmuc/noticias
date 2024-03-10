@@ -6,83 +6,104 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap" rel="stylesheet">
-    <title>Document</title>
     <link rel="stylesheet" href="style.css">
     <script src="./script.js" defer></script>
+    <title>W. Notícias</title>
 </head>
 <body>
-    <header class="header-mobile">
-        <img src="./noticias/assets/images/logo.svg" alt="Logo do site de noticias w">
+    <header>
+        <img src="./assets/images/logo.svg" alt="logo do site de noticias W.">
+
         <button>
-            <img src="./noticias/assets/images/icon-menu.svg" alt="icone do menu">
+            <img src="./assets/images/icon-menu.svg" alt="icone do menu hamburguer">
         </button>
-        <nav>
+
+        <nav class="mobile">
             <button>
-                <img src="./noticias/assets/images/icon-menu-close.svg" alt="">
+                <img src="./assets/images/icon-menu-close.svg" alt="icone de x para fechar o menu">
             </button>
 
-            <a href="">Home</a>
-            <a href="">Novo</a>
-            <a href="">Popular</a>
-            <a href="">Trending</a>
-            <a href="">Categoria</a>
+            <a href="#">Home</a>
+            <a href="#">Novo</a>
+            <a href="#">Popular</a>
+            <a href="#">Trending</a>
+            <a href="#">Categorias</a>
+        </nav>
+
+        <nav class="desktop">
+            <a href="#">Home</a>
+            <a href="#">Novo</a>
+            <a href="#">Popular</a>
+            <a href="#">Trending</a>
+            <a href="#">Categorias</a>
         </nav>
     </header>
+
     <main>
         <section class="primeira-secao">
-            <img src="./noticias/assets/images/image-web-3-mobile.jpg" alt="imagem de quebra cabeça">
+            <picture>
+                <source media="(min-width: 700px)" srcset="./assets/images/image-web-3-desktop.jpg">
+                <img src="./assets/images/image-web-3-mobile.jpg" alt="icone de puzzle colorido">
+            </picture>
 
-            <h1>O futuro brilhante da Web 3.0?</h1>
-            <p>Nós mergulhamos na próxima evolução da web que afirma devolver o poder das plataformas para as mãos das pessoas. Mas será que ela realmente está cumprindo sua promessa?</p>
-            <button>Ler mais</button>
+            <h1>O futuro brilhante da web 3.0</h1>
+            <div>
+                <p>Nós mergulhamos na proóxima evolução da web que afirma devolver o poder das plataformas para as mãos das pessoas. Mas será que ela realmente está cumprindo sua promessa?</p>
+                <button>Ler mais</button>
+            </div>
         </section>
 
         <section class="segunda-secao">
-
             <h2>Novo</h2>
 
-            <div class="bb-mb-pb">
+            <div class="margin-border-padding">
                 <h3>Hidrogênio VS Carros Elétricos</h3>
                 <p>Os carros movidos a hidrogênio alguma vez alcançarão os veículos elétricos?</p>
             </div>
-            
-            <div class="bb-mb-pb">
+
+            <div class="margin-border-padding">
                 <h3>A arte gerada por IA</h3>
                 <p>Quais são os possíveis efeitos adversos da geração de imagens por IA sob demanda?</p>
             </div>
 
-            <div class="bb-mb-pb">
-                <h3>O VC Funding está esgotado?</h3>
-                <p>O financiamento privado por empresas de capital de risco caiu 50%.</p>
+            <div>
+                <h3>O VC funding está esgotado?</h3>
+                <p>O financiamento privado por empresas de capítal de risco caiu 50%</p>
             </div>
-
         </section>
 
         <section class="terceira-secao">
             <div>
-                <img src="./noticias/assets/images/image-retro-pcs.jpg" alt="">
+                <img src="./assets/images/image-retro-pcs.jpg" alt="imagem de computadores antigos">
+
                 <div>
                     <strong>01</strong>
-                    <h2>Revivendo PCs antigos </h2>
-                    <p>E se PCs antigos pudessem receber peças modernas</p>
+                    <a href="#">
+                        <h2>Revivendo PCs antigos</h2>
+                    </a>
+                    <p>E se PCs antigos pudessem receber peças modernas?</p>
                 </div>
             </div>
 
             <div>
-                <img src="./noticias/assets/images/image-top-laptops.jpg" alt="">
+                <img src="./assets/images/image-top-laptops.jpg" alt="imagem de laptop">
                 <div>
                     <strong>02</strong>
-                    <h2>Top 10 Laptops de 2022 </h2>
-                    <p>Nossas melhores escolhas para diversas necessidades.</p>
+                    <a href="#">
+                        <h2>Top 10 Laptops de 2024</h2>
+                    </a>
+                    <p>Nossas melhores escolhas para diversas necessidades</p>
                 </div>
             </div>
 
             <div>
-                <img src="./noticias/assets/images/image-gaming-growth.jpg" alt="">
+                <img src="./assets/images/image-gaming-growth.jpg" alt="imagem de um controle de videogame">
                 <div>
                     <strong>03</strong>
-                    <h2>O Crescimento dos Jogos</h2>
-                    <p>Como a pandemia tem gerado novas oportunidades.</p>
+                    <a href="#">
+                        <h2>O crescimento dos Jogos</h2>
+                    </a>
+                    <p>Como a pandemia tem gerado novas oportunidades</p>
                 </div>
             </div>
         </section>
