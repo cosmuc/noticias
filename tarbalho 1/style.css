@@ -42,7 +42,7 @@ body.menu-open::before{
 .header-mobile nav{
     position: fixed;
     background-color: var(--almost-white);
-    right: 0;
+    right: -16rem;
     top: 0;
     height: 100vh;
     width: 16rem;
@@ -50,10 +50,21 @@ body.menu-open::before{
 
     display: flex;
     flex-direction: column;
+    padding: 1.5rem;
+    gap: 1.5rem;
+
+    transition: 0.7s;
+}
+
+.header-mobile nav.abrir{
+    right: 0;
 }
 
 .header-mobile nav button{
     margin-left: auto;
+    padding: 1.5rem;
+    margin-bottom: 4rem;
+    gap: 1.5rem;
 }
 
 .primeira-secao{
