@@ -33,7 +33,7 @@ main {
     padding: 2rem;
 }
 
-.conta {
+.conta, .gorjeta {
     margin-bottom: 2rem;
 }
 
@@ -42,7 +42,6 @@ main {
     color: var(--green-500);
     font-weight: 700;
 }
-
 .conta div {
     margin-top: 0.4rem;
     background-color: var(--green-100);
@@ -52,7 +51,6 @@ main {
     justify-content: space-between;
     border-radius: 0.3125rem;
 }
-
 .conta input {
     border: none;
     text-align: right;
@@ -63,15 +61,12 @@ main {
     color: var(--green-800);
     outline: none;
 }
-
 .conta input::placeholder {
     color: var(--green-300);
 }
-
 .conts:has(input:focus) div{
     outline: 2px solid var(--light-green);
 }
-
 .gorjeta div {
     margin-top: 1rem;
     display: grid;
@@ -79,6 +74,24 @@ main {
     gap: 1rem;
 }
 
+.gorjeta input {
+    font-size: 1.5rem;
+    font-weight: 700;
+    border: none;
+    outline: none;
+    padding-block: 0.4rem;
+    border-radius: 0.3125rem;
+    background-color: var(--green-800);
+    color: var(--white);
+}
+
 .gorjeta #outra {
     width: 100%;
+    background-color: var(--green-100);
+    text-align: center;
+    color: var(--green-500);
+}
+
+.gorjeta #outra::placeholder {
+    color: var(--green-300);
 }
