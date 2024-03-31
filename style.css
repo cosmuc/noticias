@@ -4,7 +4,6 @@
     box-sizing: border-box;
     font-family: "Space Mono", serif;
 }
-
 :root {
     --green-100: #F3F9FA;
     --green-200: #C5E4E7;
@@ -14,11 +13,9 @@
     --green-600: #547878;
     --green-700: #3D6666;
     --green-800: #00474B;
-    -light-green: #26C2AE;
     --light-green: #26C2AE;
     --white: #FFFFFF;
 }
-
 body {
     background-color: var(--green-200);
 }
@@ -27,22 +24,24 @@ header {
     justify-content: center;
     padding-block: 2.8rem;
 }
-
 main {
     background-color: var(--white);
     padding: 2rem;
 }
-
 .conta, .gorjeta {
     margin-bottom: 2rem;
 }
 
 .conta label,
-.gorjeta label {
+.gorjeta label,
+.pessoas label {
     color: var(--green-500);
     font-weight: 700;
 }
-.conta div {
+
+
+.conta div,
+.pessoas div {
     margin-top: 0.4rem;
     background-color: var(--green-100);
     padding: 0.4rem 1.2rem;
@@ -51,7 +50,10 @@ main {
     justify-content: space-between;
     border-radius: 0.3125rem;
 }
-.conta input {
+
+
+.conta input,
+.pessoas input {
     border: none;
     text-align: right;
     width: 100%;
@@ -61,19 +63,25 @@ main {
     color: var(--green-800);
     outline: none;
 }
-.conta input::placeholder {
+
+
+.conta input::placeholder,
+.pessoas input::placeholder {
     color: var(--green-300);
 }
-.conts:has(input:focus) div{
+
+
+.conta:has(input:focus) div,
+.pessoas:has(input:focus) div{
     outline: 2px solid var(--light-green);
 }
+
 .gorjeta div {
     margin-top: 1rem;
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 1rem;
 }
-
 .gorjeta input {
     font-size: 1.5rem;
     font-weight: 700;
@@ -84,7 +92,6 @@ main {
     background-color: var(--green-800);
     color: var(--white);
 }
-
 .gorjeta #outra {
     width: 100%;
     background-color: var(--green-100);
@@ -94,4 +101,8 @@ main {
 
 .gorjeta #outra::placeholder {
     color: var(--green-300);
+}
+
+.pessoas #erro {
+    display: none;
 }
